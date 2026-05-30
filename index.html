@@ -77,22 +77,37 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero" id="home" aria-label="Welcome">
+    <section class="hero hero--bodyscape" id="home" aria-label="Welcome">
       <div class="hero__bg" aria-hidden="true">
-        <img src="assets/images/hero-bg.jpg" alt="" width="1920" height="1280" loading="eager">
+        <picture>
+          <source srcset="assets/images/hero-bodyscape.webp" type="image/webp">
+          <img src="assets/images/hero-bodyscape.jpg" alt="" width="3840" height="2711" loading="eager" fetchpriority="high">
+        </picture>
         <div class="hero__overlay"></div>
       </div>
       <div class="container hero__content reveal">
-        <p class="hero__welcome">Welcome</p>
-        <h1 class="hero__tagline">to the waxing experience you've been looking for</h1>
-        <p class="hero__sub">Gentle hard-wax services in Beaverton — clients praise Tori's meticulous touch and surprisingly painless technique. By appointment only.</p>
-        <a href="https://my-site-103202-105206.square.site/" class="btn btn-primary btn--block-mobile" data-book>Book Now</a>
+        <div class="hero__headline">
+          <p class="hero__welcome">Welcome</p>
+          <div class="hero__copy">
+            <h1 class="hero__tagline">to the waxing experience you've been looking for</h1>
+            <div class="hero__bottom">
+              <div class="hero__glass">
+                <p class="hero__sub">Gentle hard-wax services in Beaverton — clients praise Tori's meticulous touch and surprisingly painless technique. By appointment only.</p>
+              </div>
+              <a href="https://my-site-103202-105206.square.site/" class="btn btn-primary hero__book" data-book>Book Now</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Trust bar -->
     <section class="trust-bar" aria-label="Why choose Northwest Wax">
-      <div class="container trust-bar__grid reveal">
+      <div class="container">
+        <div class="trust-bar__cta reveal">
+          <a href="https://my-site-103202-105206.square.site/" class="btn btn-primary btn--block-mobile" data-book>Book Now</a>
+        </div>
+        <div class="trust-bar__grid reveal">
         <div class="trust-item">
           <div class="trust-item__icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-sparkle"/></svg></div>
           <div>
@@ -120,6 +135,7 @@
             <p class="trust-item__title">Cute, clean studio</p>
             <p class="trust-item__text">Cozy space inside Cedar + Sage</p>
           </div>
+        </div>
         </div>
       </div>
     </section>
