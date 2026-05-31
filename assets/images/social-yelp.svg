@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Yelp">
+  <circle cx="12" cy="12" r="12" fill="#D32323"/>
+  <g fill="#FFFFFF">
+    <ellipse cx="12" cy="6.75" rx="1.55" ry="3.1"/>
+    <ellipse cx="16.1" cy="9.35" rx="1.55" ry="3.1" transform="rotate(72 16.1 9.35)"/>
+    <ellipse cx="14.85" cy="14.65" rx="1.55" ry="3.1" transform="rotate(144 14.85 14.65)"/>
+    <ellipse cx="9.15" cy="14.65" rx="1.55" ry="3.1" transform="rotate(216 9.15 14.65)"/>
+    <ellipse cx="7.9" cy="9.35" rx="1.55" ry="3.1" transform="rotate(288 7.9 9.35)"/>
+  </g>
+</svg>
