@@ -51,6 +51,18 @@
   --shadow-md: 0 8px 24px oklch(0.3 0.02 50 / 0.1);
 }
 
+/* Slightly larger type on phones — one scale tweak, site-wide */
+@media (max-width: 767px) {
+  :root {
+    --text-xs: clamp(0.8125rem, 0.78rem + 0.3vw, 0.9375rem);
+    --text-sm: clamp(0.9375rem, 0.875rem + 0.4vw, 1.0625rem);
+    --text-base: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem);
+    --text-lg: clamp(1.25rem, 1.125rem + 0.85vw, 1.625rem);
+    --text-xl: clamp(1.625rem, 1.3125rem + 1.35vw, 2.375rem);
+    --text-2xl: clamp(2.125rem, 1.35rem + 2.65vw, 3.5rem);
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -801,7 +813,7 @@ h1, h2, h3, h4, p {
   }
 
   .hero--bodyscape .hero__sub {
-    font-size: 0.8125rem;
+    font-size: var(--text-sm);
     line-height: 1.4;
   }
 
